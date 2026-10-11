@@ -3,6 +3,7 @@ from menu import exibir_menu
 from movimentacoes import registrar_entrada, registrar_saida
 from listar_vagas import listar_vagas
 from exibir_faturamento import exibir_faturamento
+from consultar_veiculo import consultar_veiculo
 
 def limpar_tela():
     """Limpa o terminal."""
@@ -23,12 +24,14 @@ def main():
         elif opcao == '3':
             listar_vagas()
         elif opcao == '4':
+            consultar_veiculo()
+        elif opcao == '5':
             exibir_faturamento()
         elif opcao == '0':
             print("\nEncerrando o sistema de estacionamento. Até breve!")
             break
         else:
-            print("[ERRO] Opção inválida! Escolha entre 0 e 4.")
+            print("[ERRO] Opção inválida! Escolha entre 0 e 5.")
             
         print("-"*40)
         

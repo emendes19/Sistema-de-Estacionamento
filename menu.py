@@ -6,5 +6,6 @@ def exibir_menu():
     print("1. Registar Entrada de Veículo")
     print("2. Registar Saída e Cobrança")
     print("3. Listar Estado das Vagas")
-    print("4. Exibir Faturamento Total")
+    print("4. Consultar Veículo Específico")
+    print("5. Exibir Faturamento Total")
     print("0. Sair")

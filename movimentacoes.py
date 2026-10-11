@@ -8,6 +8,17 @@ def registrar_entrada():
     """Busca uma vaga livre e regista a entrada do veículo."""
     estacionamento = obter_estacionamento()
     
+    print("\n--- REGISTRAR ENTRADA ---")
+    placa = input("Matrícula (Placa) do veículo: ").strip().upper()
+    
+    # 🔍 VALIDAÇÃO DE VEÍCULO DUPLICADO:
+    # Percorre o estacionamento para verificar se a placa já está cadastrada
+    for veiculo_existente in estacionamento.values():
+        if veiculo_existente is not None and veiculo_existente["placa"] == placa:
+            print(f"\n[ERRO] O veículo com a matrícula {placa} já se encontra estacionado!")
+            return
+
+    # Procura a primeira vaga livre se o veículo não estiver estacionado
     vaga_livre = None
     for vaga, veiculo in estacionamento.items():
         if veiculo is None:
@@ -18,10 +29,7 @@ def registrar_entrada():
         print("\n[ERRO] O estacionamento está lotado!")
         return
 
-    print(f"\n--- REGISTAR ENTRADA (Vaga {vaga_livre}) ---")
-    placa = input("Matrícula (Placa) do veículo: ").strip().upper()
     modelo = input("Modelo do veículo: ").strip()
-    
     agora = datetime.datetime.now()
     
     veiculo_info = {
