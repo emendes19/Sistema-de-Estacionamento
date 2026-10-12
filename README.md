@@ -8,21 +8,19 @@
 ---
 
 ## 👥 Integrantes
-* Nome do Integrante 1 — Matrícula
-* Nome do Integrante 2 — Matrícula
-* Nome do Integrante 3 — Matrícula
+- Paulo Eduardo Miranda Mendes - 04159820
 
 ---
 
 ## 📋 1. Descrição do Problema
 O projeto consiste no desenvolvimento de um **Sistema de Controle de Estacionamento** automatizado via terminal. O programa tem como objetivo gerenciar a ocupação de 10 vagas, controlando o fluxo operacional de veículos de forma eficiente e transparente.
 
-* **Entradas:** Matrícula (placa) e modelo do veículo, além dos comandos de navegação do menu e horários gerados automaticamente pelo sistema.
-* **Regras de Negócio:**
+- **Entradas:** Matrícula (placa) e modelo do veículo, além dos comandos de navegação do menu e horários gerados automaticamente pelo sistema.
+- **Regras de Negócio:**
   - O estacionamento possui capacidade fixa de 10 vagas.
   - O sistema impede o registo de veículos com matrículas duplicadas que já estejam dentro do estacionamento.
   - A cobrança de permanência segue a regra: taxa fixa de R$ 5,00 para a primeira hora, acrescida de R$ 2,00 por cada hora adicional (ou fração), calculada de forma automatizada com base no tempo decorrido.
-* **Resultados Esperados:** Recibos detalhados de saída com o valor devido, relatórios atualizados do estado das vagas (livres ou ocupadas), consulta específica de veículos e faturamento total acumulado do dia.
+- **Resultados Esperados:** Recibos detalhados de saída com o valor devido, relatórios atualizados do estado das vagas (livres ou ocupadas), consulta específica de veículos e faturamento total acumulado do dia.
 
 ---
 
@@ -38,9 +36,9 @@ A solução foi implementada inteiramente em **Python**, estruturando-se em mód
 ---
 
 ## 🧠 3. Reflexão sobre o Desenvolvimento
-* **Principais Decisões:** Optou-se por separar a aplicação em múltiplos ficheiros (modularização avançada) em vez de um único script monolítico para demonstrar organização profissional de código e limpeza arquitetural. O uso do módulo nativo `datetime` e `math` facilitou a precisão na gestão temporal e no arredondamento das horas cobradas.
-* **Dificuldades Encontradas:** Garantir a sincronização correta do estado global entre ficheiros diferentes em Python exigiu o encapsulamento dos dados por meio de funções de acesso centralizadas, evitando dessincronizações de escopo.
-* **Possíveis Melhorias Futuras:** Implementar a persistência de dados utilizando ficheiros (como JSON ou CSV) ou uma base de dados leve (SQLite), permitindo que os registos não sejam perdidos ao encerrar a aplicação.
+- **Principais Decisões:** Optou-se por separar a aplicação em múltiplos ficheiros (modularização avançada) em vez de um único script monolítico para demonstrar organização profissional de código e limpeza arquitetural. O uso do módulo nativo `datetime` e `math` facilitou a precisão na gestão temporal e no arredondamento das horas cobradas.
+- **Dificuldades Encontradas:** Garantir a sincronização correta do estado global entre ficheiros diferentes em Python exigiu o encapsulamento dos dados por meio de funções de acesso centralizadas, evitando dessincronizações de escopo.
+- **Possíveis Melhorias Futuras:** Implementar a persistência de dados utilizando ficheiros (como JSON ou CSV) ou uma base de dados leve (SQLite), permitindo que os registos não sejam perdidos ao encerrar a aplicação.
 
 ---
 
@@ -50,5 +48,5 @@ Para executar o sistema na sua máquina, siga os passos abaixo:
 1. Certifique-se de ter o **Python 3.x** instalado no seu computador.
 2. Clone este repositório ou descarregue todos os ficheiros do projeto para uma mesma pasta:
    ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
-   cd NOME_DO_REPOSITORIO
+   git clone [https://github.com/emendes19/Sistema-de-Estacionamento.git](https://github.com/emendes19/Sistema-de-Estacionamento.git)
+   cd Sistema-de-Estacionamento
