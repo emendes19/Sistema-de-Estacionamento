@@ -50,3 +50,10 @@ Para executar o sistema na sua máquina, siga os passos abaixo:
    ```bash
    git clone [https://github.com/emendes19/Sistema-de-Estacionamento.git](https://github.com/emendes19/Sistema-de-Estacionamento.git)
    cd Sistema-de-Estacionamento
+
+---
+
+   ## 🎥 5. Vídeo de Demonstração
+O vídeo demonstrando a aplicação em funcionamento está disponível no próprio repositório:
+
+👉 **[Clique aqui para assistir ao vídeo de demonstração](./Paradigmas%20de%20programação.mp4)**
